@@ -1,0 +1,82 @@
+<p>g works!</p>
+<form class="example-form" [formGroup]="profile" (ngSubmit)="submit()">
+
+    <mat-form-field class="example-full-width"  appearance="fill">
+      <mat-label>Number</mat-label>
+      <input type="text"
+             placeholder="Pick one"
+             aria-label="Number"
+             matInput
+             [formControl]="myControl"
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Select</mat-label>
+        <input matInput formControlName="select">
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select> 
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Input</mat-label>
+        <input matInput formControlName="input">
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput formControlName="textarea"></textarea>
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+
+      <mat-form-field appearance="fill">
+        <mat-label>FirstName</mat-label>
+        <input matInput formControlName="fname">
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+
+      <mat-form-field appearance="fill">
+        <mat-label>LastName</mat-label>
+        <input matInput formControlName="lname">
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+
+      <form [formGroup]="profile" (ngSubmit)="submit()" class="example-form">
+        <mat-form-field appearance="fill">
+            <mat-label>Street</mat-label>
+            <input matInput formControlName="address">
+          </mat-form-field>
+    
+          <mat-divider></mat-divider>
+    
+      </form>
+
+      <button type="text" (click)="submit">Click Me</button>
+      
+
+  </form>
+  
+  

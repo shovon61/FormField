@@ -1,0 +1,61 @@
+<p>d works!</p>
+
+<form class="example-form" [formGroup]="profile" (ngSubmit)="work()">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Headline</mat-label>
+    <input matInput formControlName="fname">
+  </mat-form-field>
+
+  <mat-divider></mat-divider>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Detailes</mat-label>
+    <textarea matInput formControlName="lname"></textarea>
+  </mat-form-field>
+
+  <mat-divider></mat-divider>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Address</mat-label>
+    <input matInput formControlName="address">
+  </mat-form-field>
+
+  <mat-divider></mat-divider>
+
+  <button type="submit" mat-flat-button color="primary">click me</button>
+
+  <mat-divider></mat-divider> <br>
+
+  <mat-form-field appearance="fill">
+    <button mat-flat-button color="primary">
+      <mat-label>Select me plz <i class="arrow d"></i></mat-label>
+      <mat-select>
+        <mat-option value="one">First option</mat-option>
+        <mat-option value="two">Second option</mat-option>
+      </mat-select>
+    </button>
+  </mat-form-field>
+
+  <mat-divider></mat-divider>
+
+  <button mat-button mat-flat-button color="primary" [matMenuTriggerFor]="belowMenu">Below 2 <i class="arrow d"></i></button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+
+  <mat-divider></mat-divider>
+
+  <button type="submit" mat-flat-button color="primary">click on me <i class="arrow d"></i> </button>
+  <mat-divider></mat-divider> <br>
+
+  <!-- <mat-form-field appearance="fill">
+    <button  mat-button  [matMenuTriggerFor]="beforeMenu" mat-flat-button color="primary">Before</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+  </mat-form-field> -->
+
+  <mat-divider></mat-divider> <br>
+</form>

@@ -1,0 +1,25 @@
+<p>b works!</p>
+<form class="example-form" [formGroup]="profileForm" type="text" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Heading</mat-label>
+        <input matInput formControlName="firstName">
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Elaboration</mat-label>
+        <textarea matInput formControlName="lastName"></textarea>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address">
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <button (click)="onSubmit()" mat-flat-button color="primary">Click Me</button>
+</form>

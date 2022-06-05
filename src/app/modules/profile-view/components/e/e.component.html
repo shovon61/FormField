@@ -1,0 +1,54 @@
+<p>e works!</p>
+<form class="example-form" [formGroup]="profile" (ngSubmit)="submit()">
+
+    <!-- <mat-form-field>
+
+        <button mat-button mat-flat-button color="warn" [matMenuTriggerFor]="belowMenu">Dropdown Button-<i class="arrow d"></i></button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+          <button mat-menu-item>Item 3</button>
+          <button mat-menu-item>Item 4</button>
+        </mat-menu>
+    </mat-form-field> -->
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Number</mat-label>
+        <input type="text"
+        placeholder="Pick one"
+        aria-label="Number"
+         matInput
+        [formControl]="myControl"
+         [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of options" [value]="option">
+                {{option}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Headline</mat-label>
+        <input matInput formControlName="lname">
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Detailes News</mat-label>
+        <textarea matInput formControlName="fname"></textarea>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address">
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+
+    <button type="submit" mat-flat-button color="primary" [disabled]="!profile.valid" >CLick ME</button>
+
+</form>
