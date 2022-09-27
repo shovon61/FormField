@@ -17,6 +17,7 @@ import { KComponent } from './components/k/k.component';
 import { LComponent } from './components/l/l.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { MaterialModule } from 'src/app/material.module';
   ],
   imports: [
     CommonModule,
-    ProfileViewRoutingModule,MaterialModule,ReactiveFormsModule,FormsModule
+    ProfileViewRoutingModule,MaterialModule,ReactiveFormsModule,FormsModule, HttpClientModule
   ]
 })
 export class ProfileViewModule { }
