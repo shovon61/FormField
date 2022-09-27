@@ -1,1 +1,84 @@
-<p>h works!</p>
+<p>h works! Other copied here </p>
+<p>create-news works!</p>
+<form class="example-form" [formGroup]="newsCreateFormGroup" (ngSubmit)="onSubmitForm()">
+  <mat-form-field class="example-full-width1" appearance="fill">
+    <mat-label>Choose the News Category</mat-label>
+    <input
+      type="text"
+      placeholder="Pick one"
+      aria-label="Number"
+      matInput
+      [formControl]="myControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <!-- <button mat-button mat-flat-button color="warn"
+         [matMenuTriggerFor]="belowMenu">Dropdown Button-<i class="arrow d"></i></button>
+            <mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+      <button mat-menu-item>Item 3</button>
+      <button mat-menu-item>Item 4</button>
+    </mat-menu>
+ <br><br>       -->
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Heading of The News</mat-label>
+    <input matInput placeholder="Heading" formControlName="heading" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width2" appearance="fill">
+    <mat-label>Sortdescription of The News</mat-label>
+    <input matInput placeholder="Heading" formControlName="sortDescription" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width3" appearance="fill">
+    <mat-label>Detailes description of The News</mat-label>
+    <textarea matInput placeholder="Heading" formControlName="description"></textarea>
+    <!-- <input matInput placeholder="Heading" formControlName="description"> -->
+  </mat-form-field>
+  <button type="submit" mat-flat-button color="primary">Submit</button>
+</form>
+
+<br /><mat-divider></mat-divider> <br />
+
+<form class="example-form" [formGroup]="newsCreateFormGroup" (ngSubmit)="onSubmitForm2()">
+  <mat-form-field class="example-full-width1" appearance="fill">
+    <mat-label>Edit the News Category</mat-label>
+    <input
+      type="text"
+      placeholder="Pick one"
+      aria-label="Number"
+      matInput
+      [formControl]="myControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Edit Heading of The News</mat-label>
+    <input matInput placeholder="Heading" formControlName="heading" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width2" appearance="fill">
+    <mat-label>Edit Sortdescription of The News</mat-label>
+    <input matInput placeholder="Heading" formControlName="sortDescription" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width3" appearance="fill">
+    <mat-label>Edit Detailes description of The News</mat-label>
+    <textarea matInput placeholder="Heading" formControlName="description"></textarea>
+    <!-- <input matInput placeholder="Heading" formControlName="description"> -->
+  </mat-form-field>
+  <button type="submit" mat-flat-button color="primary">Edit the Submit</button>
+</form>
+<p>Detailes</p>
