@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from '@env/environment';
 import { Observable } from 'rxjs';
+import {} from '@env/environment';
 
 const APP_API_URL = `${environment.localApiUrl}`;
 
