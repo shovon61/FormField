@@ -1,4 +1,5 @@
 <p>l works!</p>
+<h1>Some github solution </h1>
 <p>Here we want to add some extra futures</p>
 <form class="example-form" [formGroup]="profile" (ngSubmit)="onclick()">
     <mat-form-field class="example-full-width" appearance="fill">
@@ -6,22 +7,23 @@
         <input matInput formControlName="lname">
     </mat-form-field>
 
-    <mat-divider></mat-divider>         <br>  <br>
+    <mat-divider></mat-divider>         <br>
 
     <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Detailes News</mat-label>
         <textarea matInput formControlName="fname"></textarea>
     </mat-form-field>
 
-    <mat-divider></mat-divider>         <br>      <br>
+    <mat-divider></mat-divider>         <br>
 
     <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Address</mat-label>
         <input matInput formControlName="address">
     </mat-form-field>
 
-    <mat-divider></mat-divider>             <br>  <br>
+    <mat-divider></mat-divider>             <br>
 
+    <button type="submit" (click)="onclick()" mat-flat-button color="primary" [disabled]="!profile.valid">CLick ME</button>  <br> <br>
     <button type="submit" (click)="onclick()" mat-flat-button color="primary" [disabled]="!profile.valid">CLick ME</button>
 
 </form>
