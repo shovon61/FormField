@@ -1,4 +1,75 @@
 <p>k works!</p>
 
-<h3>hlw</h3>
-<h1>hi</h1>
+<h2>Reactive Form Works Correctly. User input Show in view.</h2>
+
+<div class="container">
+    
+    <div>1</div>
+
+    <div class="right-section">
+        <h3>Get A Quote</h3>
+        <em>Fields Marked with * are required</em>
+
+        <div class="form">
+            <form class="example-form" [formGroup]="evaluationform" #evaluationform1="ngForm" (ngSubmit)="evaluationsubmit(evaluationform1.value)">
+                
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Company</mat-label>
+                    <input matInput formControlName="company" placeholder="Please Enter The Company Name">
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name" placeholder="Please Enter The Name">
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email" placeholder="Please Enter The Name Like pat@example.com">
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Phone</mat-label>
+                    <input matInput formControlName="phone" minlength="8" placeholder="Please Enter The Phone Number">
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput formControlName="message"
+                        placeholder="Please Enter The Message elaborately"></textarea>
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+
+                <mat-form-field class="example-full-width" appearance="fill" hintLabel="Min 8 characters">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password" minlength="8" placeholder="Please Enter password">
+                </mat-form-field>
+
+                <mat-divider></mat-divider>
+
+                <button type="submit" >Send</button>
+                  
+            </form>
+        </div>
+    </div>
+
+        <div class="output"> 
+            <h2>Output Of The Form Is Given Below :</h2>
+            <h3>Company Name :  {{display.company}} </h3>
+            <h3>User Name :  {{display.name}} </h3>
+            <h3>Email :  {{display.email}} </h3>
+            <h3>Phone :  {{display.phone}} </h3>
+            <h3>Message :  {{display.message}} </h3>
+            <h3>Password :  {{display.password}} </h3>
+         </div>
+
+</div>
