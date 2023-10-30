@@ -25,7 +25,7 @@ export class KComponent implements OnInit {
     })
   }
 
-  evaluationsubmit(data:NgForm) {
+  evaluationsubmit(data:NgForm):any {
     console.log(this.evaluationform.value);
     this.display=data;
   }

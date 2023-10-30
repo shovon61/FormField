@@ -18,6 +18,10 @@ import { LComponent } from './components/l/l.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MComponent } from './components/m/m.component';
+import { NComponent } from './components/n/n.component';
+import { OComponent } from './components/o/o.component';
+import { PComponent } from './components/p/p.component';
 
 
 @NgModule({
@@ -34,7 +38,11 @@ import { HttpClientModule } from '@angular/common/http';
     IComponent,
     JComponent,
     KComponent,
-    LComponent
+    LComponent,
+    MComponent,
+    NComponent,
+    OComponent,
+    PComponent
   ],
   imports: [
     CommonModule,
