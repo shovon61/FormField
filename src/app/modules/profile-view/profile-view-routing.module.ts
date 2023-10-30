@@ -13,6 +13,10 @@ import { JComponent } from './components/j/j.component';
 import { KComponent } from './components/k/k.component';
 import { LComponent } from './components/l/l.component';
 import { ProfileViewComponent } from './profile-view.component';
+import { MComponent } from './components/m/m.component';
+import { NComponent } from './components/n/n.component';
+import { OComponent } from './components/o/o.component';
+import { PComponent } from './components/p/p.component';
 
 const routes: Routes = [
             {
@@ -31,6 +35,10 @@ const routes: Routes = [
                       { path:'j',component:JComponent},
                       { path:'k',component:KComponent},
                       { path:'l',component:LComponent},
+                      { path:'m',component:MComponent},
+                      { path:'n',component:NComponent},
+                      { path:'o',component:OComponent},
+                      { path:'p',component:PComponent},
                     ]
             },
             { path:'',redirectTo:'profile-view',pathMatch:'full'}

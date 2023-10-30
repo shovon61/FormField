@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class IComponent implements OnInit {
 
   evaluationform!: FormGroup; 
-  display:any;
+  display:any=[];
 
   constructor(private evaluation: FormBuilder) { }
 

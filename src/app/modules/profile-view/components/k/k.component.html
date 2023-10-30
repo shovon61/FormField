@@ -11,7 +11,7 @@
         <em>Fields Marked with * are required</em>
 
         <div class="form">
-            <form class="example-form" [formGroup]="evaluationform" #evaluationform1="ngForm" (ngSubmit)="evaluationsubmit(evaluationform1.value)">
+            <form class="example-form" [formGroup]="evaluationform" #evaluation="ngForm" (ngSubmit)="evaluationsubmit(evaluation.value)">
                 
                 <mat-form-field class="example-full-width" appearance="fill">
                     <mat-label>Company</mat-label>
@@ -64,7 +64,7 @@
 
         <div class="output"> 
             <h2>Output Of The Form Is Given Below :</h2>
-            <h3>Company Name :  {{display.company}} </h3>
+            <h3>Company Name :  {{display.company | uppercase }}  </h3>
             <h3>User Name :  {{display.name}} </h3>
             <h3>Email :  {{display.email}} </h3>
             <h3>Phone :  {{display.phone}} </h3>
