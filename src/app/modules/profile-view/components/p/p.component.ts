@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './p.component.html',
   styleUrls: ['./p.component.scss']
 })
-export class PComponent implements OnInit {
+export class PComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onbacktoapp(){
+    window.close();
   }
 
 }

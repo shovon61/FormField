@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './o.component.html',
   styleUrls: ['./o.component.scss']
 })
-export class OComponent implements OnInit {
+export class OComponent {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+    openNewTab(){
+      window.open('/newtab');
+    }
+  
 
 }
