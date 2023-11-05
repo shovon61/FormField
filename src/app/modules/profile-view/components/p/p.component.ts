@@ -10,5 +10,8 @@ export class PComponent {
   onbacktoapp(){
     window.close();
   }
+  openNewTab1(){
+    window.open('/newtab');
+  }
 
 }

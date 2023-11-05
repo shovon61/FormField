@@ -11,6 +11,10 @@ export class OComponent {
     openNewTab(){
       window.open('/newtab');
     }
+    onbacktoapp1(){
+      window.close();
+    }
+  
   
 
 }
