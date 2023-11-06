@@ -22,6 +22,10 @@ import { MComponent } from './components/m/m.component';
 import { NComponent } from './components/n/n.component';
 import { OComponent } from './components/o/o.component';
 import { PComponent } from './components/p/p.component';
+import { TodoComponent } from './todo/todo.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -42,11 +46,13 @@ import { PComponent } from './components/p/p.component';
     MComponent,
     NComponent,
     OComponent,
-    PComponent
+    PComponent,
+    TodoComponent
   ],
   imports: [
     CommonModule,
-    ProfileViewRoutingModule,MaterialModule,ReactiveFormsModule,FormsModule, HttpClientModule
+    ProfileViewRoutingModule,MaterialModule,ReactiveFormsModule,FormsModule, HttpClientModule,
+    MatDividerModule,MatButtonModule,MatInputModule
   ]
 })
 export class ProfileViewModule { }
