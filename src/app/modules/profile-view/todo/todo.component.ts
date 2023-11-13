@@ -8,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class TodoComponent implements OnInit {
 
   list: any = [];
-  //task1:any ='';
-  task:any="";
+  task:any = " ";
 
-  //constructor() { }
+  constructor() { }
 
   ngOnInit(): void {
     this.GetAll();
