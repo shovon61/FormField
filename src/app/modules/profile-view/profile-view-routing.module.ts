@@ -18,6 +18,9 @@ import { NComponent } from './components/n/n.component';
 import { OComponent } from './components/o/o.component';
 import { PComponent } from './components/p/p.component';
 import { TodoComponent } from './todo/todo.component';
+import { QComponent } from './components/q/q.component';
+import { RComponent } from './components/r/r.component';
+import { SComponent } from './components/s/s.component';
 
 const routes: Routes = [
             {
@@ -40,6 +43,9 @@ const routes: Routes = [
                       { path:'n',component:NComponent},
                       { path:'o',component:OComponent},
                       { path:'p',component:PComponent},
+                      { path:'q',component:QComponent},
+                      { path:'r',component:RComponent},
+                      { path:'s',component:SComponent},
                       { path:'todo',component:TodoComponent}
                     ]
             },

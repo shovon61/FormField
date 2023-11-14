@@ -26,6 +26,9 @@ import { TodoComponent } from './todo/todo.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { QComponent } from './components/q/q.component';
+import { RComponent } from './components/r/r.component';
+import { SComponent } from './components/s/s.component';
 
 
 @NgModule({
@@ -47,7 +50,10 @@ import { MatInputModule } from '@angular/material/input';
     NComponent,
     OComponent,
     PComponent,
-    TodoComponent
+    TodoComponent,
+    QComponent,
+    RComponent,
+    SComponent
   ],
   imports: [
     CommonModule,
