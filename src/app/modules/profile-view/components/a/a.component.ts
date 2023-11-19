@@ -48,6 +48,20 @@ export class AComponent implements OnInit {
   //     zip: new FormControl('')
   //   })
   // });
+  // constructor ( private add: FormBuilder, private http: HttpClient) {}
+  // profileForm = this.add.group({
+  //   firstName: ['',Validators.required],
+  //   lastName: [''],
+  //   address: this.add.group({
+  //     street: [''],
+  //     city: [''],
+  //     state: [''],
+  //     zip: ['']
+  //   }),
+  // });
+
+  // onSubmit() {
+  //     console.warn(this.profileForm.value);  }
 
   // onSubmit() {
   //   console.warn(this.profileForm.value);
