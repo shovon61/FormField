@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'form-field';
+  sub = 'Not used';
+  field = ' Want to use';
 }
