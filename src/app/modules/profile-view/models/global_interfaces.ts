@@ -7,4 +7,5 @@ export interface IGame {
     description: string;
     thumbRating: number;
     imageUrl: string;
+    
 }
